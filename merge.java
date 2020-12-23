@@ -16,6 +16,7 @@
 
         merge(right, left, arr);
     }
+    // O(N)
     public static void merge(int[] left, int[] right, int[] res) {
         int l = 0, r = 0, i = 0;
         while (l != left.length && r != right.length) {

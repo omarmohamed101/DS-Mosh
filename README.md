@@ -41,11 +41,12 @@ data structures and algorithms implementations using java
 
 
 * Change rotation speed
-    <div style="text-align:center">
+    <p align="center">
     | Slow | Mid | Fast |
     |:----:|:----:|:----:|
     |![slow](/images/slow.gif "slow speed rotation")|![mid](/images/mid.gif "mid speed rotation")|![fast](/images/fast.gif "fast speed rotation") |
-    </div>
+    </p>
+        
     
 * On/Off Motor
 

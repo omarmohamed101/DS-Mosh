@@ -42,6 +42,25 @@ data structures and algorithms implementations using java
 
 * Change rotation speed
     <p align="center">
+      <table>
+       <tr>
+         <td>Slow</td>
+         <td>Mid</td>
+         <td>Fast</td>
+       </tr>
+         
+       <tr>
+        <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+      </table>
+       
     | Slow | Mid | Fast |
     |:----:|:----:|:----:|
     |![slow](/images/slow.gif "slow speed rotation")|![mid](/images/mid.gif "mid speed rotation")|![fast](/images/fast.gif "fast speed rotation") |

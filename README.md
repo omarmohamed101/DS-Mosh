@@ -42,10 +42,7 @@ data structures and algorithms implementations using java
 
 * Change rotation speed
     <div style="width: 100%;">
-    <div style="margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;">
+    <div style="margin: auto; text-align: center;">
       <table>
        <tr>
          <td>Slow</td>

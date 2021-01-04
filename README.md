@@ -41,7 +41,7 @@ data structures and algorithms implementations using java
 
 
 * Change rotation speed
-    <p align="center">
+    <div style="text-align: center;">
       <table>
        <tr>
          <td>Slow</td>
@@ -59,7 +59,7 @@ data structures and algorithms implementations using java
        <td>sdff</td>
        <td>dsf</td>
      </tr>
-     </table>
+     </div>
        
     | Slow | Mid | Fast |
     |:----:|:----:|:----:|

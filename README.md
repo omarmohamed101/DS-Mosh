@@ -41,6 +41,7 @@ data structures and algorithms implementations using java
 
 
 * Change rotation speed
+    <div style="width: 100%;">
     <div style="margin: auto;
   width: 50%;
   border: 3px solid green;
@@ -63,11 +64,12 @@ data structures and algorithms implementations using java
        <td>dsf</td>
      </tr>
      </div>
+     </div>
        
     | Slow | Mid | Fast |
     |:----:|:----:|:----:|
     |![slow](/images/slow.gif "slow speed rotation")|![mid](/images/mid.gif "mid speed rotation")|![fast](/images/fast.gif "fast speed rotation") |
-    </p>
+    
         
     
 * On/Off Motor

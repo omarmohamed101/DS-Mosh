@@ -49,17 +49,17 @@ data structures and algorithms implementations using java
          <td>Fast</td>
        </tr>
          
-       <tr>
-        <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-       <tr>
-         <td></td>
-         <td></td>
-         <td></td>
-       </tr>
-      </table>
+     <tr>
+      <td>sfsdf</td>
+       <td>sdfsd</td>
+       <td>dsf</td>
+     </tr>
+     <tr>
+       <td>dsf</td>
+       <td>sdff</td>
+       <td>dsf</td>
+     </tr>
+     </table>
        
     | Slow | Mid | Fast |
     |:----:|:----:|:----:|

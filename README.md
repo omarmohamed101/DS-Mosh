@@ -13,6 +13,11 @@ data structures and algorithms implementations using java
   <br>
 </p>
 
+<p align="center">
+   ![on/off](/images/onoff.gif "on/off GIF")
+  <br>
+</p>
+
 ## Table of contents
 
 - [Description](#Description)

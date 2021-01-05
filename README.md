@@ -11,6 +11,13 @@ data structures and algorithms implementations using java
 - [Features](#Features)
 - [Team members](#Team-members)
 
+## Quick start
+
+Several quick start options are available:
+
+- in order to run the [circuit](https://github.com/Mohamed-Fathy-Salah/8086_steppermotor_assembly/blob/main/stepper%20motor_project.pdsprj) you have to install at least proteus vertion 8. 
+- Clone the repo: `git clone https://github.com/Mohamed-Fathy-Salah/8086_steppermotor_assembly.git`
+
 
 
 # Description

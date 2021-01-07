@@ -38,7 +38,7 @@ Several quick start options are available:
 
    As long as the ON/OFF switch is closed the main process runs in an infinite loop.</br>
 Firstly it calls the `GETPRESSED` process to read from port c the state of the direction and the HALF/FULL step then update the HDIR variable.
-Then it calls the `GETSPEED` process to get the input from the potentiometer to calculate the right delay as the user wants after that it reset the write pin of the ADC to convert the analog value to digital and set this pin again at the end of the process for future use. then it checks the HDIR value to see whether to turn the led on or off.
+Then it calls the `GETSPEED` process to get the input from the potentiometer to calculate the right delay as the user wants after that it reset the write pin of the ADC to convert the analog value to digital and set this pin again at the end of the process for future use. then it checks the HDIR value to see whether to turn the led on or off.</br>
 After the delay has the right value from the potentiometer and HDIR (the direction variable) has the right value it's time to call the RUN function.</br>
 In the `RUN` function it firstly checks the direction to see whether the motor will rotate in clockwise direction or anticlockwise direction, Then it checks the step mode to rotate the motor in full step of half step. so it’s able now to run in the desired mode and direction.</br>
 The remaining part related to the speed Display on the screen.</br>

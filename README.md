@@ -14,8 +14,8 @@ data structures and algorithms implementations using java
 </p>
 
 <p align="center">
-   ![on/off](/images/onoff.gif "on/off GIF")
-  <br>
+   The data segment begins with the configuration of the ports so we don’t have to calculate the addresses of everything every time we need them. We have two i/o devices 4 ports each, so we have 8 ports in total we need to address.
+
 </p>
 
 ## Table of contents

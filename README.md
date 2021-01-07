@@ -13,7 +13,7 @@ data structures and algorithms implementations using java
   <br>
 </p>
 
-<p align="center">
+<p>
    The data segment begins with the configuration of the ports so we don’t have to calculate the addresses of everything every time we need them. We have two i/o devices 4 ports each, so we have 8 ports in total we need to address.
 
 </p>

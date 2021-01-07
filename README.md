@@ -37,6 +37,7 @@ Several quick start options are available:
 ## Code Flow
 
    As long as the ON/OFF switch is closed the main process runs in an infinite loop.</br></br>
+Before running the motor we have to calculate some global variables.</br>
 Firstly it calls the `GETPRESSED` process to read from port c the state of the direction and the HALF/FULL step then update the HDIR variable.
 Then it calls the `GETSPEED` process to get the input from the potentiometer to calculate the right delay as the user wants after that it reset the write pin of the ADC to convert the analog value to digital and set this pin again at the end of the process for future use. then it checks the HDIR value to see whether to turn the led on or off.</br></br>
 After the delay has the right value from the potentiometer and HDIR (the direction variable) has the right value it's time to call the RUN function.</br>

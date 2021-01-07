@@ -54,7 +54,6 @@ Finally the `DISPLAY` PROC which will simply take the value of the speed stored 
   <hr>
 
 
-<hr>
 <b>8255A</b>
 
 <img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" align="right">

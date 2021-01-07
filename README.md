@@ -13,11 +13,12 @@ data structures and algorithms implementations using java
   <br>
 </p>
 
-<div style="display: block">
+<div width = "100">
 
 <img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG"  >
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" >
+
 </div>
+<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" >
 <p>
    The data segment begins with the configuration of the ports so we don’t have to calculate the addresses of everything every time we need them. We have two i/o devices 4 ports each, so we have 8 ports in total we need to address.
 

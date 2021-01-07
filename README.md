@@ -49,7 +49,7 @@ Finally the `DISPLAY` PROC which will simply take the value of the speed stored 
 
 <b>8255A</b>
 <p>l.,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa</p>
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG">
+<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" align="right">
 
 
 # Description

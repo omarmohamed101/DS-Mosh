@@ -47,7 +47,7 @@ Then `GETDSPLYD` PROC calculate the speed of the motor that will be displayed on
 Finally the `DISPLAY` PROC which will simply take the value of the speed stored in the DSPLYD global variable and display it on the segments connected to the second i/o device.
 
 
-
+<b>8255A</b>
 
 
 # Description

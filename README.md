@@ -63,8 +63,20 @@ Finally the `DISPLAY` PROC which will simply take the value of the speed stored 
 
 <b>8255A</b>
 
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" align="right">
-  <p>l.,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa </p>
+<img src="https://github.com/omarmohamed101/java-code/blob/main/STEPPER%20MOTOR.PNG" align="right">
+<img src="https://github.com/omarmohamed101/java-code/blob/main/uni%20and%20pi.PNG" align="right">
+<p>
+  - DC motor that move in discrete steps giving the illusion of rotation </br>
+  - It devides the complete rotation into number of steps ,Each stepper motor will have fixed step      angle</br>
+  - this motor is drived by L293D Motor Driver</br>
+  -stepper motor are basically two types :Unipolar & bipolar
+  <ul>
+    <li><h5>unipolar :- </h5> has 5 or 6 wires ,this happens by tying each 2 coils from one end 
+then there are 2 common wires as shown  , unipolar can be used as bipolar 
+as we did in the project. </li>
+  <li><h5>Bipolar :- </h5> has only 4 wires comming out from two coils ,there is no common wires , it can't be used as unipolar </li>
+  </ul>
+</p>
   </br></br></br></br></br></br></br></br></br>
   <hr>
   

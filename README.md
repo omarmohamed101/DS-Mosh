@@ -74,7 +74,7 @@ Finally the `DISPLAY` PROC which will simply take the value of the speed stored 
     <li><h5>unipolar :- </h5> has 5 or 6 wires ,this happens by tying each 2 coils from one end 
 then there are 2 common wires as shown  , unipolar can be used as bipolar 
 as we did in the project. </li>
-  <li><h5>Bipolar :- </h5> has only 4 wires comming out from two coils ,there is no common wires , it can't be used as unipolar </li>
+  <li><h5>Bipolar :- </h5> has only 4 wires comming out from two coils ,there is no common </br>wires , it can't be used as unipolar </li>
   </ul>
 </p>
 

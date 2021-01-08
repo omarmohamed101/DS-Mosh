@@ -64,7 +64,7 @@ Finally the `DISPLAY` PROC which will simply take the value of the speed stored 
 <b>8255A</b>
 
 <img src="https://github.com/omarmohamed101/java-code/blob/main/STEPPER%20MOTOR.PNG" align="right">
-<img src="https://github.com/omarmohamed101/java-code/blob/main/uni%20and%20pi.PNG" align="right">
+
 <p>
   - DC motor that move in discrete steps giving the illusion of rotation </br>
   - It devides the complete rotation into number of steps ,Each stepper motor will have fixed step      angle</br>
@@ -77,6 +77,8 @@ as we did in the project. </li>
   <li><h5>Bipolar :- </h5> has only 4 wires comming out from two coils ,there is no common wires , it can't be used as unipolar </li>
   </ul>
 </p>
+
+<img src="https://github.com/omarmohamed101/java-code/blob/main/uni%20and%20pi.PNG" align="right">
   </br></br></br></br></br></br></br></br></br>
   <hr>
   

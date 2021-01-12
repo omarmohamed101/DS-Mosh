@@ -25,6 +25,17 @@ so all programs need resources must use system calls
 			   Ex: getpid(), sleep()
 - Communication
 			   Ex: pipe()
+			
+			
+### How to add a system Call to xv6 ?
+You need to make changes to 5 files:</br>
+- syscall.h
+- syscall.c
+- sysproc.c
+- usys.S
+- user.h
+
+
 
 
 

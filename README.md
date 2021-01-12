@@ -1,27 +1,11 @@
-# java-code
-data structures and algorithms implementations using java
 
+## What is a system call ?
 
-# 8086_steppermotor_assembly
-<h1 align="center">8086_steppermotor_assembly</h1>
-
-<p align="center">
-  
-  <br>
-  <i>Using 8086 Microprocessor to control Stepper motor direction and speed 
-    <br> then showing the current speed value on 7-seg display and the direction through Blinking Led.</i>
-  <br>
+<p> System call provides the services of the operating system to the user programs via Application Program Interface(API). It provides an interface between a process and operating system to allow user-level processes to request services of the operating system.
+so all programs need resources must use system calls
 </p>
 
 
-
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG"  align="right">
- <p>l.,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa </p></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" align="right">
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
 
 ## Table of contents
@@ -32,120 +16,6 @@ data structures and algorithms implementations using java
 - [Features](#Features)
 - [Team members](#Team-members)
 
-## Quick start
-
-Several quick start options are available:
-
-- in order to run the [circuit](https://github.com/Mohamed-Fathy-Salah/8086_steppermotor_assembly/blob/main/stepper%20motor_project.pdsprj) you have to install at least proteus vertion 8. 
-- Clone the repo: `git clone https://github.com/Mohamed-Fathy-Salah/8086_steppermotor_assembly.git`
-
-
-## Code Flow
-
-   As long as the ON/OFF switch is closed the main process runs in an infinite loop.</br></br>
-Before running the motor we have to calculate some global variables.</br>
-Firstly it calls the `GETPRESSED` process to read from port c the state of the direction and the HALF/FULL step then update the HDIR variable.
-Then it calls the `GETSPEED` process to get the input from the potentiometer to calculate the right delay as the user wants after that it reset the write pin of the ADC to convert the analog value to digital and set this pin again at the end of the process for future use. then it checks the HDIR value to see whether to turn the led on or off.</br></br>
-After the delay has the right value from the potentiometer and HDIR (the direction variable) has the right value it's time to call the RUN function.</br>
-In the `RUN` function it firstly checks the direction to see whether the motor will rotate in clockwise direction or anticlockwise direction, Then it checks the step mode to rotate the motor in full step of half step. so it’s able now to run in the desired mode and direction.</br></br>
-The remaining part related to the speed Display on the screen.</br>
-Then `GETDSPLYD` PROC calculate the speed of the motor that will be displayed on the 3-segments ranging from 28 to 100 depending on the minimum and the maximum delay value the motor can handle. and store the result in the DSPLYD global variable.</br>
-Finally the `DISPLAY` PROC which will simply take the value of the speed stored in the DSPLYD global variable and display it on the segments connected to the second i/o device.
-
-<hr>
-<b>8255A</b>
-
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" align="right" display="block">
-<img src="https://github.com/omarmohamed101/java-code/blob/main/8255A.PNG" align="right" display="block">
-  <p>l.,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa .,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa.,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa,khmjgnhgfdfghm,k.,mmnnbvcdxscvbnm,.,mmhngbfdsdfghnm,.kjhjgfdsa</p>
-  <hr>
-
-
-<b>8255A</b>
-
-<img src="https://github.com/omarmohamed101/java-code/blob/main/STEPPER%20MOTOR.PNG" align="right">
-
-<p>
-  - DC motor that move in discrete steps giving the illusion of rotation </br>
-  - It devides the complete rotation into number of steps ,Each stepper motor will have fixed step      angle</br>
-  - this motor is drived by L293D Motor Driver</br>
-  -stepper motor are basically two types :Unipolar & bipolar
-  <ul>
-    <li><h5>unipolar :- </h5> has 5 or 6 wires ,this happens by tying each 2 coils from one end 
-then there are 2 common wires as shown  , unipolar can be used as bipolar 
-as we did in the project. </li>
-  <li><h5>Bipolar :- </h5> has only 4 wires comming out from two coils ,there is no common </br>wires , it can't be used as unipolar </li>
-  </ul>
-</p>
-
-<img src="https://github.com/omarmohamed101/java-code/blob/main/uni%20and%20pi.PNG" align="right">
-  </br></br></br></br></br></br></br></br></br>
-  <hr>
-  
-
-
-
-
-# Description
-
-# Used Devices
-- 8086 microprocessor
-- 74HC373 Latch
-- 8255A I/O device
-- Stepper Motor
-- ADC0804 Digital to Analog Converter
-- L293D Motor Driver Ic
-- 2N1711 NPN Transitor
-- Resistors
-- LED
-- Switch
-- potentiometer
-- Battery
-# Resources
-* [8086] - 8086 pinout
-* [74HC373] - Latch pinout
-* [8255A] -8255A I/O device
-* [Stepper Motor] - Stepper Motor
-* [ADC0804] - Digital to Analog Converter
-* [L293D] - Motor Driver Ic
-* [2N1711] -NPN transistor
-
- [8086]: <https://www.tutorialspoint.com/microprocessor/microprocessor_8086_pin_configuration.htm>
- [74HC373]: <https://assets.nexperia.com/documents/data-sheet/74HC_HCT373.pdf>
- [8255A]: <https://www.tutorialspoint.com/microprocessor/microprocessor_intel_8255a_programmable_peripheral_interface.htm>
- [Stepper Motor]: <https://www.monolithicpower.com/en/stepper-motors-basics-types-uses>
- [ADC0804]: <https://www.engineersgarage.com/knowledge_share/adc0804-pinout/> 
- [L293D]: <https://components101.com/l293d-pinout-features-datasheet>
- [2N1711]: <https://www.dummies.com/programming/electronics/diy-projects/electronics-projects-how-to-create-a-transistor-not-gate-circuit/>
- 
- # Circuit Diagram
- ![alt circuit](https://raw.githubusercontent.com/Mohamed-Fathy-Salah/8086_steppermotor_assembly/main/images/Circuit%20Diagram.PNG)
- 
-# Features
-* Change direction of rotation
-
-    ![rotate](/images/rotate.gif "rotate GIF")
-
-
-* Change rotation speed
-    | Slow | Mid | Fast |
-    |:----:|:----:|:----:|
-    |![slow](/images/slow.gif "slow speed rotation")|![mid](/images/mid.gif "mid speed rotation")|![fast](/images/fast.gif "fast speed rotation") |
-    
-    
-* On/Off Motor
-
-    ![on/off](/images/onoff.gif "on/off GIF")
-    
-    
-* Full/Half step
-
-    ![on/off](/images/halfstepfullstep.gif "half/fullstep GIF") 
-    
-    
-* Adjusting speed
-
-    ![Speed](/images/speed.gif "speed GIF")    
         
     
 

@@ -5,7 +5,7 @@
 so all programs need resources must use system calls
 </p>
 
-### services provided by the system call:
+### Services provided by the system call:
 - Process creation and management
 - Main memory management
 - File Access, Directory and File system management
@@ -14,7 +14,7 @@ so all programs need resources must use system calls
 - Networking, etc.
 
 
-### system call types:
+### System call types:
 - Process control: end, abort, create, terminate, allocate and free memory.
 			   Ex: fork(), Exit(), Wait()
 - File management: create, open, close, delete, read file etc.

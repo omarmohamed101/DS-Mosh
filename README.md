@@ -28,12 +28,16 @@ so all programs need resources must use system calls
 			
 			
 ### How to add a system Call to xv6 ?
+
+<b>Example Adding system call returns count the read system call</b>
 You need to make changes to 5 files:</br>
 - syscall.h
 - syscall.c
 - sysproc.c
 - usys.S
 - user.h
+
+In `syscall.h` There is a number assigned to every system call. And there is initially 21 of them already defined 
 
 
 

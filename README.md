@@ -47,16 +47,76 @@ In `syscall.h` There is a number assigned to every system call. And there is ini
 
 Add this line at the end of the file: </br>
 
->    #define SYS_getreadcount 22
+>    #define SYS_getreadcount    22
 
 In `syscall.c` Add a pointer to the system call </br>
 this file contains array of function pointer which use the number we assigned in syscall.h as a pointer to the system call which will be defined in differen file. so add this line in its appropriate position:</br>
 
 >    [SYS_getreadcount]   sys_getreadcount
 
-This means, when system call occurred with system call number 22, function pointed by function pointer sys_getreadcount will be called. last thing with this file is adding the function prototype so as to be able to define it in different place. So add this line </br>
+This means, when system call occurred with system call number 22, function pointed by function pointer sys_getreadcount will be called.</br>
+
+The syscall function in this file called whenever system call is made so we have to check whether if the system call was a read system call then increase our counter.</br>
+```
+if (num == SYS_read)
+	curproc->readcount = curproc->readcount + 1;
+```
+
+Last thing with this file is adding the function prototype so as to be able to define it in different place. So add this line </br>
 
 >    extern int sys_getreadcount(void)
+
+In `sysproc.c` we implement the system call function, we can acess the current process in this file using myproc().</br>
+```
+int
+sys_getreadcount(void)
+{
+	return myproc()->readcount;
+}
+```
+The above function returns the current value of the readcount variable </br>
+
+In `usys.S` we add interface to make the userprogram able to call the system call </br>
+
+>    SYSCALL(getreadcount)
+
+Finally in `user.h` we add the function which will be called from the user program
+
+>    int getreadcount(void);
+
+Now we are done with the system call implementation and we need to make the userprogram to use the system call </br>
+Make a new file called `readcount.c` 
+```
+#include "types.h"
+#include "stat.h"
+#include "user.h"
+
+int
+main(int argc, char *argv[])
+{
+	char buffer[512];
+	int ptr = open("test.txt", 'r');
+
+	read(ptr, buffer, 512);
+	read(ptr, buffer, 512);
+	read(ptr, buffer, 512);
+
+	
+	printf(1, "The number of read syscall: %d\n", getreadcount());
+
+
+    exit();
+}
+```
+this is some useless read calls to make sure that our new system call is working properly, Note that you have to create a test.txt for testing purpose.</br>
+In order to add the user program open `Makefile` and in UPROGS add your program to the list `_readcount\` then add the file name with the files in the EXTRA section add `readcount.c` </br>
+Now it's time for testing </br>
+
+>    make qemu
+>    readcount
+
+you should now see `The number of read syscall: 3` And you are Done. :)
+
 
 
 

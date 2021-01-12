@@ -36,9 +36,21 @@ You need to make changes to 5 files:</br>
 - usys.S
 - user.h
 
-<b>Example Adding system call returns count the read system call</b>
+<b>Example: Adding system call returns the read system call count</b>
 
-In `syscall.h` There is a number assigned to every system call. And there is initially 21 of them already defined 
+In `syscall.h` There is a number assigned to every system call. And there is initially 21 of them already defined </br>
+
+Add this line at the end of the file: </br>
+`#define SYS_getreadcount 22` </br>
+
+In `syscall.c` Add a pointer to the system call </br>
+this file contains array of function pointer which use the number we assigned in syscall.h as a pointer to the system call which will be defined in differen file. so add this line in its appropriate position: </br>
+`[SYS_getreadcount] sys_getreadcount`</br>
+This means, when system call occurred with system call number 22, function pointed by function pointer sys_getreadcount will be called. last thing with this file is adding the function prototype so as to be able to define it in different place. So add this line </be>
+`extern int sys_getreadcount(void)`</br>
+
+
+
 
 
 

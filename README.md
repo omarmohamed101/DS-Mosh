@@ -38,6 +38,11 @@ You need to make changes to 5 files:</br>
 
 <b>Example: Adding system call returns the read system call count</b>
 
+Firstly we set up the process structure appropriatly in `proc.h` in the struct proc ADD a new variable `int readcount` to hold the number of system calls for each created process. </br>
+Then in `proc.c` file exactly in allocproc function we have to set our variable initially with zero, The function first search for UNUSED process in the process table then jumb to the found label, here where we will initiallize our variable `p->readcount = 0;` </br>
+
+Now we are ready to start implementing the systeme call</br
+
 In `syscall.h` There is a number assigned to every system call. And there is initially 21 of them already defined </br>
 
 Add this line at the end of the file: </br>

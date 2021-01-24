@@ -10,7 +10,14 @@ Which sets the number of tickets to the calling process. As mentioned above ever
 This system call returns some info about all the running processes such as the process id, number of tickets, how many ticks this process accumulated up til now and whether this process is in use or not. We will make use of this system call in the testing phase of the lottery scheduler, But in general we can use it for any task related to processes information.
 it's a variant of the command line program `ps` which is used to know what is going on.
 
-
+### Steps:
+1- Make a system call which allows you to set the tickets for a process.</br>
+2- Code to generate a random number.</br>
+3- In the scheduler function count the total number of tickets for all processes that are runnable.</br>
+4- Generate a random number between 0 and the total tickets calculated above.</br>
+5- When looping through the processes keep the counter of the total number of tickets passed.</br>
+6- Just when the counter becomes greater the random value we got, run the process.</br>
+7- Put a break at the end of for loop so that we don't execute the processes following the process we just run.</br>
 
 
 

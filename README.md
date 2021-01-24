@@ -1,3 +1,50 @@
+## An xv6 lottery scheduler
+the xv6 by default use a round robin scheduling algorithm. so we will change it to a lottery scheduler. </br>
+The lottery in a nutshell is a probabilistic scheduling algorithm, and the basic idea is to give the processes lottery tickets for various system resources, such as cup time. Whenever a scheduling decision has to be made a lottery ticket is chosen at random, and the process holding that ticket gets the resource. More important processes can be given extra tickets to increase their odds of winning. Lottery scheduling also solves the problem of starvation. Giving each process at least one lottery ticket guarantees that it has a non-zero probability of being selected at each scheduling operation.</br>
+In conclusion what the scheduler will be doing is given two processes A and B, if A has 60 tickets from 1-60 and B has 40 tickets from 61-100. The scheduler will pick a random number from 1 to 100 if the picked number is from 1 to 60 then A is the winner else if the picked number is from 61 to 100 then b is the winner.</br>
+
+### we will implement two system calls:
+1 - `int settickets(int number)` </br>
+Which sets the number of tickets to the calling process. As mentioned above every process has 1 ticket by default, but it may call this routine to raise the number of tickets it has and receive a higher proportion of the cpu.  
+2 - `int getpinfo(struct pstat *)`</br>
+This system call returns some info about all the running processes such as the process id, number of tickets, how many ticks this process accumulated up til now and whether this process is in use or not. We will make use of this system call in the testing phase of the lottery scheduler, But in general we can use it for any task related to processes information.
+it's a variant of the command line program `ps` which is used to know what is going on.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## What is a system call ?
 

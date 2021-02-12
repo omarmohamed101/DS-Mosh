@@ -22,4 +22,21 @@ public class Main {
         // All characters repeated
         return Character.MIN_VALUE;
     }
+    
+        public static char firstRepeatedUsingHash(String word) {
+        Map<Character, Integer> freq = new HashMap<Character, Integer>();
+        char[] chars = word.toCharArray();
+        for (char ch: chars)
+            if (freq.containsKey(ch))
+                freq.put(ch, freq.get(ch) + 1);
+            else
+                freq.put(ch, 1);
+
+        for (char ch: chars)
+            if(freq.get(ch) > 1)
+                return ch;
+
+        // All characters repeated
+        return Character.MIN_VALUE;
+    }
 }

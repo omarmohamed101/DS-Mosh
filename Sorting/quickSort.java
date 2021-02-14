@@ -24,6 +24,8 @@
     private static int partiton(int [] arr, int start, int end) {
         int pivit = arr[end];
         int boundry = start - 1;
+        // Here we are iterating over the whole segment including the pivit at the last place
+        // so no need to perform an extra swap at the end of the function
         for (int i = start; i <= end; i++) {
             if (arr[i] <= pivit) {
                 boundry++;

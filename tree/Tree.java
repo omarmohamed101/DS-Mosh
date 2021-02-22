@@ -225,5 +225,28 @@ public class Tree {
     //------------------------------------------------------------------------------
     
 
+    
+    public void deleteLeafes() {
+        if (root == null)
+            throw new IllegalStateException();
+        deleteLeafes(root);
+    }
+
+    private void deleteLeafes(Node node) {
+        if (node == null)
+            return;
+        if (node.leftChild != null && isLeaf(node.leftChild))
+            node.leftChild = null;
+
+        if (node.rightChild != null && isLeaf(node.rightChild))
+            node.rightChild = null;
+
+        deleteLeafes(node.rightChild);
+        deleteLeafes(node.leftChild);
+    }
+
+    private boolean isLeaf(Node node) {
+        return node.leftChild == null && node.rightChild == null;
+    }
 
 }

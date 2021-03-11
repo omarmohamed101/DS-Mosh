@@ -46,12 +46,12 @@ public class Tree {
             return false;
         Node current = root;
         while (current != null) {
-            if (current.value == value)
-                return true;
             if (current.value > value)
                 current = current.leftChild;
-            else
+            else if (current.value < value)
                 current = current.rightChild;
+            else
+                return true;
         }
         return false;
     }

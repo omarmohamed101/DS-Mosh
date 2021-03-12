@@ -14,8 +14,6 @@
                 }
             }
             if (isSorted) return;
-            display(arr);
-            System.out.println();
         }
     }
     
@@ -34,12 +32,6 @@
         // and obviously this element is in place so no need to start with it
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i], j = i - 1;
-            /*for (j = i - 1; j >= 0; j--) {
-                if (arr[j] > temp)
-                    arr[j + 1] = arr[j];
-                else break;
-            }*/
-            // using while loop for cleaner visualisation instead of break and ugly for with variable outside
             while (j >= 0 && arr[j] > temp) {
                 arr[j +  1] = arr[j];
                 j--;
